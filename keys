@@ -1,0 +1,29 @@
+
+[1mFrom:[0m /home/dansbands-96273/code/labs/green_grocer-web-103017/grocer.rb @ line 15 Object#consolidate_cart:
+
+     [1;34m3[0m: [32mdef[0m [1;34mconsolidate_cart[0m(cart)
+     [1;34m4[0m:   new_cart = {}
+     [1;34m5[0m:   keys = []
+     [1;34m6[0m:   count = [1;34m0[0m
+     [1;34m7[0m: 
+     [1;34m8[0m:   cart.each [32mdo[0m |hash|
+     [1;34m9[0m: 
+    [1;34m10[0m:     hash.each [32mdo[0m |key, value|[1;34m#key: "TEMPEH" value:{:price=>3.0, :clearance=>true}[0m
+    [1;34m11[0m:       keys << key
+    [1;34m12[0m:       keys.include?(key) ? count += [1;34m1[0m : count = [1;34m1[0m
+    [1;34m13[0m:       new_cart[key] = value
+    [1;34m14[0m:       new_cart[key][[33m:count[0m] = count
+ => [1;34m15[0m:       binding.pry
+    [1;34m16[0m: 
+    [1;34m17[0m:     [32mend[0m
+    [1;34m18[0m:   [32mend[0m
+    [1;34m19[0m: 
+    [1;34m20[0m:   [1;34m# new_cart.each do |item, info|[0m
+    [1;34m21[0m:   [1;34m#[0m
+    [1;34m22[0m:   [1;34m# end[0m
+    [1;34m23[0m:   new_cart
+    [1;34m24[0m:   [1;34m# binding.pry[0m
+    [1;34m25[0m: 
+    [1;34m26[0m:   [1;34m# code here[0m
+    [1;34m27[0m: [32mend[0m
+
